@@ -8,56 +8,55 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="banner">
             <h1 id="titulo">EL GATO</h1>
             <img id="logo" src="images/logo.png" alt="LOGO">
         </section>
-        <section>
+        <section class="banner">
             <button>Iniciar/Reiniciar Juego</button>
             <button>Reiniciar Puntuación</button>
         </section>
     </header>
-    <section>
+    <section class="area-juego">
         <section class="jugador">
-            <h1>Jugador 1</h1>
-            <label for="jugador1">Eres: 
+            <h1 class="jugadorLabel"> Jugador 1</h1>
+            <label class="jugadorNombreLabel" for="jugador1">Eres: 
                 <input type="text" placeholder="Ingresa tu nombre" id="jugador1">
             </label>
-            <h3>Selecciona tu ficha:</h3>
-            <img src="images/x.png" alt="X">
-            <label for="cruz1">X:
+            <h3 class="seleccionFicha"> Selecciona tu ficha:</h3>
+            <section class="seleccionJugador">
+                <img class= "fichaJugador" src="images/x.png" alt="X">
                 <input type="radio" name="ficha1" id="cruz1" checked>
-            </label>
-            <img src="images/o.png" alt="O">
-            <label for="circulo1">O:
+                <br><br>
+                <img class= "fichaJugador" src="images/o.png" alt="O">
                 <input type="radio" name="ficha1" id="circulo1">
-            </label>
-            <h1>Juegos Ganados: 3</h1>
-        </section>
-        <section>
-            <section>
-                <h1>Es turno de:</h1>
-                <p>Jugador 1</p>
-                <img src="images/x.png" alt="turno-actual">
             </section>
-            <canvas class="tablero">
-            </canvas>
+            <h1 class="juegosGanados">Juegos Ganados</h1>
+            <h1 class="juegosGanadosNum" id="juegosGanadosJ1">3</h1>
+        </section>
+        <section class="juego">
+            <section class="mensajes-tablero">
+                <h1 id="turnoDe">Es turno de:</h1>
+                <h1 id="turno">Jugador 1</h1>
+                <!--<img src="images/x.png" alt="turno-actual">-->
+            </section>
+            <canvas class="tablero"></canvas>
         </section>
         <section class="jugador">
-            <h1>Jugador 2</h1>
-            <label for="jugador2">Eres: 
+            <h1 class="jugadorLabel">Jugador 2</h1>
+            <label class="jugadorNombreLabel" for="jugador2">Eres: 
                 <input type="text" placeholder="Ingresa tu nombre" id="jugador2">
             </label>
-            <h3>Selecciona tu ficha:</h3>
-            <img src="images/x.png" alt="X">
-            <label for="cruz2">X:
+            <h3 class="seleccionFicha">Selecciona tu ficha:</h3>
+            <section class="seleccionJugador">
+                <img class= "fichaJugador" src="images/x.png" alt="X">
                 <input type="radio" name="ficha2" id="cruz2">
-            </label>
-            <img src="images/o.png" alt="O">
-            <label for="circulo2">O:
+                <br><br>
+                <img class= "fichaJugador" src="images/o.png" alt="O">
                 <input type="radio" name="ficha2" id="circulo2" checked>
-            </label>
-            <h1>Juegos Ganados: 1</h1>
+            </section>
+            <h1 class="juegosGanados">Juegos Ganados</h1>
+            <h1 class="juegosGanadosNum" id="juegosGanadosJ2">1</h1>
         </section>
     </section>
     

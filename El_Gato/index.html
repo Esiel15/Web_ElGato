@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gato</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <section>
+            <h1 id="titulo">EL GATO</h1>
+            <img id="logo" src="images/logo.png" alt="LOGO">
+        </section>
+        <section>
+            <button>Iniciar/Reiniciar Juego</button>
+            <button>Reiniciar Puntuación</button>
+        </section>
+    </header>
+    <section>
+        <section class="jugador">
+            <h1>Jugador 1</h1>
+            <label for="jugador1">Eres: 
+                <input type="text" placeholder="Ingresa tu nombre" id="jugador1">
+            </label>
+            <h3>Selecciona tu ficha:</h3>
+            <img src="images/x.png" alt="X">
+            <label for="cruz1">X:
+                <input type="radio" name="ficha1" id="cruz1" checked>
+            </label>
+            <img src="images/o.png" alt="O">
+            <label for="circulo1">O:
+                <input type="radio" name="ficha1" id="circulo1">
+            </label>
+            <h1>Juegos Ganados: 3</h1>
+        </section>
+        <section>
+            <section>
+                <h1>Es turno de:</h1>
+                <p>Jugador 1</p>
+                <img src="images/x.png" alt="turno-actual">
+            </section>
+            <canvas class="tablero">
+            </canvas>
+        </section>
+        <section class="jugador">
+            <h1>Jugador 2</h1>
+            <label for="jugador2">Eres: 
+                <input type="text" placeholder="Ingresa tu nombre" id="jugador2">
+            </label>
+            <h3>Selecciona tu ficha:</h3>
+            <img src="images/x.png" alt="X">
+            <label for="cruz2">X:
+                <input type="radio" name="ficha2" id="cruz2">
+            </label>
+            <img src="images/o.png" alt="O">
+            <label for="circulo2">O:
+                <input type="radio" name="ficha2" id="circulo2" checked>
+            </label>
+            <h1>Juegos Ganados: 1</h1>
+        </section>
+    </section>
+    
+</body>
+</html>

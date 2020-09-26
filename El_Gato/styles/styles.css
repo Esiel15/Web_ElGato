@@ -6,12 +6,21 @@
     
 }
 
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 /*-----------BANNER------------*/
 header {
+    flex: .1;
     display: flex;
     align-items: center;
     background-color: rgb(201, 10, 10);
-    
 }
 
 button {
@@ -39,6 +48,7 @@ button {
 /*-------------AREA DE JUEGO------------*/
 .area-juego {
     display: flex;
+    flex: 1;
 }
 
 .jugador {

@@ -68,7 +68,8 @@ button {
 
 .mensajes-tablero {
     display: flex;
-    min-height: 32px;
+    flex: .1;
+    /*min-height: 32px;*/
     background-color: rgb(31, 103, 161);
 }
 
@@ -81,7 +82,7 @@ button {
 
 .tablero {
     flex: 1;
-    min-height: 450px;
+    /*min-height: 450px;*/
     background-color: rgb(197, 208, 245);
 }
 
